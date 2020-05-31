@@ -1,0 +1,22 @@
+{
+  "name": "webcalc",
+  "version": "1.0.0",
+  "description": "a calculator on web with login and register functions",
+  "main": "index.js",
+  "scripts": {
+    "test": "none"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/malsubmal/webcalc.git"
+  },
+  "keywords": [
+    "webcalc"
+  ],
+  "author": "IoT-juniors",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/malsubmal/webcalc/issues"
+  },
+  "homepage": "https://github.com/malsubmal/webcalc#readme"
+}
