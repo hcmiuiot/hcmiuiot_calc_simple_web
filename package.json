@@ -2,13 +2,12 @@
   "name": "webcalc",
   "version": "1.0.0",
   "description": "a calculator on web with login and register functions",
-  "main": "index.js",
   "scripts": {
     "test": "none"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/malsubmal/webcalc.git"
+    "url": "git+https://github.com/hcmiuiot/hcmiuiot_calc_simple_web.git"
   },
   "keywords": [
     "webcalc"
@@ -16,7 +15,7 @@
   "author": "IoT-juniors",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/malsubmal/webcalc/issues"
+    "url": "https://github.com/hcmiuiot/hcmiuiot_calc_simple_web/issues"
   },
-  "homepage": "https://github.com/malsubmal/webcalc#readme"
+  "homepage": "https://github.com/hcmiuiot/hcmiuiot_calc_simple_web#readme"
 }
