@@ -1,0 +1,25 @@
+
+#calculator {
+    font-family: 'Bernard MT';
+    font-size: small;
+    text-align: center;
+}
+
+.majorColumn {
+    width: 40%;
+    float: left;
+    background-color: #e6e6e6;
+}
+
+.column{
+    width: 25%;
+    float: left;
+    background-color: #f0f0f0;
+}
+
+.minorColumn {
+    width: 20%;
+    font-size: smaller;
+    float: left;
+    background-color: #e6e6e6;
+}
