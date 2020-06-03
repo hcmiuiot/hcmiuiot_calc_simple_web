@@ -11,6 +11,12 @@
     background-color: #e6e6e6;
 }
 
+.mminorColumn {
+    width: 16%;
+    float: left;
+    background-color: #e6e6e6;
+}
+
 .column{
     width: 25%;
     float: left;
@@ -22,6 +28,19 @@
     font-size: smaller;
     float: left;
     background-color: #e6e6e6;
+}
+
+.mminorColumn {
+    width: 16%;
+    font-size: smaller;
+    float: left;
+    background-color: #e6e6e6;
+}
+
+.row::after{
+    content: '';
+    display: table;
+    clear: both;
 }
 
 

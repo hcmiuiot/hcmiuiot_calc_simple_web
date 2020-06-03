@@ -61,10 +61,6 @@ function negate() {
     }
 }
 
-//function clear() {
-//    document.getElementById("mainDisplay").innerHTML = 'clear';
-//} god what's wrong with you?
-
 function cleartemp() {
     let x = document.getElementById("mainDisplay").innerHTML;
     if (x.length == 0) {
@@ -81,7 +77,7 @@ function clearhistory() {
 
 function equal() {
     let x = document.getElementById("mainDisplay").innerHTML;
-    if (x[x.length - 1] != '+' && x[x.length - 1] != '-' && x[x.length - 1] != '*' && x[x.length - 1] != '/') {
+    if (x[x.length - 1] != '+' && x[x.length - 1] != '-' && x[x.length - 1] != '*' && x[x.length - 1] != '/' ) {
         document.getElementById("mainDisplay").innerHTML = eval(x);
         x += '=' + eval(x);
         x = $("<p></p>").text(x);

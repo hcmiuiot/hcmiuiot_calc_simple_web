@@ -25,7 +25,7 @@
             <div class="majorColumn" id="calc-side">
 
                 <div class="minorRow">
-                    <div id="minorDisplay"> </div>
+                    <div id="minorDisplay"><!-- say hello user here --> </div>
                 </div>
 
                 <div class="displayRow">
@@ -50,18 +50,41 @@
                     </div>
                 </div>
 
+                <!-- there's a bug here. FIX -->
                 <div class="row">
                     <div class="column">
-                        <div class="operatorcard" onclick="binary()">binary</div>
+                        <div class="operatorcard" onclick="decToHexa()">to16</div>
                     </div>
                     <div class="column">
-                        <div class="operatorcard" onclick="octal()">octal</div>
+                        <div class="operatorcard" onclick="hexaToDec()">fr16</div>
                     </div>
                     <div class="column">
-                        <div class="operatorcard" onclick="decimal()">decimal</div>
+                        <div class="operatorcard" onclick="decToOct()">to8</div>
                     </div>
                     <div class="column">
-                        <div class="operatorcard" onclick="hexadecimal()">hexadecimal</div>
+                        <div class="operatorcard" onclick="octToDec()">fr8</div>
+                    </div>
+                    
+                </div>
+
+                <div class="row">
+                    <div class="mminorColumn">
+                        <div class="operatorcard" onclick="decToBi()">to2</div>
+                    </div>
+                    <div class="mminorColumn">
+                        <div class="operatorcard" onclick="biToDec()">fr2</div>
+                    </div>
+                    <div class="mminorColumn">
+                        <div class="operatorcard" onclick="decToHexa()">to16</div>
+                    </div>
+                    <div class="mminorColumn">
+                        <div class="operatorcard" onclick="hexaToDec()">fr16</div>
+                    </div>
+                    <div class="mminorColumn">
+                        <div class="operatorcard" onclick="decToOct()">to8</div>
+                    </div>
+                    <div class="mminorColumn">
+                        <div class="operatorcard" onclick="octToDec()">fr8</div>
                     </div>
                 </div>
 
@@ -73,7 +96,7 @@
                         <div class="operatorcard" onclick="clearhistory()">CH</div>
                     </div>
                     <div class="column">
-                        <div class="operatorcard" onclick="clear()">C</div>
+                        <div class="operatorcard" onclick="$('#mainDisplay').text('')">C</div>
                     </div>
                     <div class="column">
                         <div class="operatorcard" onclick="cleartemp()">del</div>
@@ -158,9 +181,9 @@
             </div>
 
             <div class="majorColumn" id="history-side">
-                <!-- need to add memory tab and history tab -->
+                <!-- need to add memory tab functions -->
+                
 
-                <!-- Nav pills -->
                 <ul class="nav nav-pills" role="tablist">
                     <li class="nav-item">
                         <a class="nav-link active" data-toggle="pill" href="#history">history</a>
@@ -170,7 +193,7 @@
                     </li>
                 </ul>
 
-                <!-- Tab panes -->
+            
                 <div class="tab-content">
                     <div id="history" class="container tab-pane active">hello</div>
                     <div id="memory" class="container tab-pane fade">Hello</div>
@@ -178,16 +201,16 @@
             </div>
 
         </div>
-        
+
     </div>
 
 
 
     <!-- put your javascript in a seperate file in folder javascript -->
     <!-- and call them at the end of body -->
-
     <!-- js -->
     <script src="javascripts/numb.js"></script>
+    <script src="javascripts/empty.js"></script>
 
     <!-- CDN -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
