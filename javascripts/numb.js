@@ -1,14 +1,13 @@
 
 function numb(value) {
     document.getElementById("mainDisplay").innerHTML += value;
-    let x = document.getElementById("mainDisplay").innerHTML;
+   
 }
 
 //limit inputting / and * without inputting numb first
 
 function funct(value) {
     let x = document.getElementById("mainDisplay").innerHTML;
-    let y = document.getElementById("minorDisplay").innerHTML;
     switch (value) {
         case '%':
             x /= 100;
