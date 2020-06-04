@@ -1,12 +1,18 @@
 
 #calculator {
-    font-family: 'Bernard MT';
+    font-family: 'Bernard MT', monospace;
     font-size: small;
     text-align: center;
 }
 
 .majorColumn {
     width: 40%;
+    float: left;
+    background-color: #e6e6e6;
+}
+
+.mminorColumn {
+    width: 16%;
     float: left;
     background-color: #e6e6e6;
 }
@@ -23,3 +29,20 @@
     float: left;
     background-color: #e6e6e6;
 }
+
+.mminorColumn {
+    width: 16%;
+    font-size: smaller;
+    float: left;
+    background-color: #e6e6e6;
+}
+
+.row::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+
+/*need to add hover and onclick effects*/
+

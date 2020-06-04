@@ -19,131 +19,187 @@
 
     <div class="grid-container" id="calculator">
 
+        <!-- need to add some bootstrap beauty -->
+        <div class="majorRow">
 
-            <div class="majorRow">
+            <div class="majorColumn" id="calc-side">
 
-                <div class="majorColumn" id="calc-side">
-
-                    <div class="minorRow">
-                        <div id="minorDisplay"> </div>
-                    </div>
-
-                    <div class="displayRow">
-                        <div id="mainDisplay"> </div>
-                    </div>
-
-                    <div class="minorRow">
-                        <div class="minorColumn">
-                            <div class="memorycard" value="MC" onclick="MC()">MC</div>
-                        </div>
-                        <div class="minorColumn">
-                            <div class="memorycard" value="MR" onclick="MR()">MR</div>
-                        </div>
-                        <div class="minorColumn">
-                            <div class="memorycard" value="M+" onclick="Mpl()">M+</div>
-                        </div>
-                        <div class="minorColumn">
-                            <div class="memorycard" value="M-" onclick="Mmn()">M-</div>
-                        </div>
-                        <div class="minorColumn">
-                            <div class="memorycard" value="MS" onclick="MS()">MS</div>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="column">
-                            <div class="operatorcard" onclick="funct('%')">%</div>
-                        </div>
-                        <div class="column">
-                            <div class="operatorcard"  onclick="clearentry()">CE</div>
-                        </div>
-                        <div class="column">
-                            <div class="operatorcard"  onclick="clear()">C</div>
-                        </div>
-                        <div class="column">
-                            <div class="operatorcard" onclick="cleartemp()">x|</div>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="column">
-                            <div class="operatorcard"  onclick="funct('inverse')">1/x</div>
-                        </div>
-                        <div class="column">
-                            <div class="operatorcard" onclick="funct('sqr')">x^2</div>
-                        </div>
-                        <div class="column">
-                            <div class="operatorcard" onclick="funct('sqrt')">sqrt(x)</div>
-                        </div>
-                        <div class="column">
-                            <div class="operatorcard" onclick="funct('/')">/</div>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="column">
-                            <div class="numbcard" onclick="numb(7)">7</div>
-                        </div>
-                        <div class="column">
-                            <div class="numbcard" onclick="numb(8)">8</div>
-                        </div>
-                        <div class="column">
-                            <div class="numbcard" onclick="numb(9)">9</div>
-                        </div>
-                        <div class="column">
-                            <div class="operatorcard"  onclick="funct('mult')">*</div>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="column">
-                            <div class="numbcard" onclick="numb(4)">4</div>
-                        </div>
-                        <div class="column">
-                            <div class="numbcard" onclick="numb(5)">5</div>
-                        </div>
-                        <div class="column">
-                            <div class="numbcard" onclick="numb(6)">6</div>
-                        </div>
-                        <div class="column">
-                            <div class="operatorcard" onclick="funct('minus')">-</div>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="column">
-                            <div class="numbcard"  onclick="numb(1)">1</div>
-                        </div>
-                        <div class="column">
-                            <div class="numbcard" onclick="numb(2)">2</div>
-                        </div>
-                        <div class="column">
-                            <div class="numbcard" onclick="numb(3)">3</div>
-                        </div>
-                        <div class="column">
-                            <div class="operatorcard" onclick="funct('plus')">+</div>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="column">
-                            <div class="operatorcard" onclick="negate()">+/-</div>
-                        </div>
-                        <div class="column">
-                            <div class="numbcard"  onclick="numb(0)">0</div>
-                        </div>
-                        <div class="column">
-                            <div class="operatorcard" onclick="dot()">.</div>
-                        </div>
-                        <div class="column">
-                            <div class="operatorcard" onclick="equal()">=</div>
-                        </div>
-                    </div>
-
+                <div class="minorRow">
+                    <div id="minorDisplay"><!-- say hello user here --> </div>
                 </div>
 
-                <div class="majorColumn" id="history-side">how are you?</div>
+                <div class="displayRow">
+                    <div id="mainDisplay"> </div>
+                </div>
+
+                <div class="minorRow">
+                    <div class="minorColumn">
+                        <div class="memorycard" value="MC" onclick="MC()">MC</div>
+                    </div>
+                    <div class="minorColumn">
+                        <div class="memorycard" value="MR" onclick="MR()">MR</div>
+                    </div>
+                    <div class="minorColumn">
+                        <div class="memorycard" value="M+" onclick="Mpl()">M+</div>
+                    </div>
+                    <div class="minorColumn">
+                        <div class="memorycard" value="M-" onclick="Mmn()">M-</div>
+                    </div>
+                    <div class="minorColumn">
+                        <div class="memorycard" value="MS" onclick="MS()">MS</div>
+                    </div>
+                </div>
+
+                <!-- there's a bug here. FIX -->
+                <div class="row">
+                    <div class="column">
+                        <div class="operatorcard" onclick="decToHexa()">to16</div>
+                    </div>
+                    <div class="column">
+                        <div class="operatorcard" onclick="hexaToDec()">fr16</div>
+                    </div>
+                    <div class="column">
+                        <div class="operatorcard" onclick="decToOct()">to8</div>
+                    </div>
+                    <div class="column">
+                        <div class="operatorcard" onclick="octToDec()">fr8</div>
+                    </div>
+                    
+                </div>
+
+                <div class="row">
+                    <div class="mminorColumn">
+                        <div class="operatorcard" onclick="decToBi()">to2</div>
+                    </div>
+                    <div class="mminorColumn">
+                        <div class="operatorcard" onclick="biToDec()">fr2</div>
+                    </div>
+                    <div class="mminorColumn">
+                        <div class="operatorcard" onclick="decToHexa()">to16</div>
+                    </div>
+                    <div class="mminorColumn">
+                        <div class="operatorcard" onclick="hexaToDec()">fr16</div>
+                    </div>
+                    <div class="mminorColumn">
+                        <div class="operatorcard" onclick="decToOct()">to8</div>
+                    </div>
+                    <div class="mminorColumn">
+                        <div class="operatorcard" onclick="octToDec()">fr8</div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="column">
+                        <div class="operatorcard" onclick="funct('%')">%</div>
+                    </div>
+                    <div class="column">
+                        <div class="operatorcard" onclick="clearhistory()">CH</div>
+                    </div>
+                    <div class="column">
+                        <div class="operatorcard" onclick="$('#mainDisplay').text('')">C</div>
+                    </div>
+                    <div class="column">
+                        <div class="operatorcard" onclick="cleartemp()">del</div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="column">
+                        <div class="operatorcard" onclick="funct('inverse')">1/x</div>
+                    </div>
+                    <div class="column">
+                        <div class="operatorcard" onclick="funct('sqr')">x^2</div>
+                    </div>
+                    <div class="column">
+                        <div class="operatorcard" onclick="funct('sqrt')">sqrt(x)</div>
+                    </div>
+                    <div class="column">
+                        <div class="operatorcard" onclick="funct('/')">/</div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="column">
+                        <div class="numbcard" onclick="numb(7)">7</div>
+                    </div>
+                    <div class="column">
+                        <div class="numbcard" onclick="numb(8)">8</div>
+                    </div>
+                    <div class="column">
+                        <div class="numbcard" onclick="numb(9)">9</div>
+                    </div>
+                    <div class="column">
+                        <div class="operatorcard" onclick="funct('mult')">*</div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="column">
+                        <div class="numbcard" onclick="numb(4)">4</div>
+                    </div>
+                    <div class="column">
+                        <div class="numbcard" onclick="numb(5)">5</div>
+                    </div>
+                    <div class="column">
+                        <div class="numbcard" onclick="numb(6)">6</div>
+                    </div>
+                    <div class="column">
+                        <div class="operatorcard" onclick="funct('minus')">-</div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="column">
+                        <div class="numbcard" onclick="numb(1)">1</div>
+                    </div>
+                    <div class="column">
+                        <div class="numbcard" onclick="numb(2)">2</div>
+                    </div>
+                    <div class="column">
+                        <div class="numbcard" onclick="numb(3)">3</div>
+                    </div>
+                    <div class="column">
+                        <div class="operatorcard" onclick="funct('plus')">+</div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="column">
+                        <div class="operatorcard" onclick="negate()">+/-</div>
+                    </div>
+                    <div class="column">
+                        <div class="numbcard" onclick="numb(0)">0</div>
+                    </div>
+                    <div class="column">
+                        <div class="operatorcard" onclick="numb('.')">.</div>
+                    </div>
+                    <div class="column">
+                        <div class="operatorcard" onclick="equal()">=</div>
+                    </div>
+                </div>
+
             </div>
+
+            <div class="majorColumn" id="history-side">
+                <!-- need to add memory tab functions -->
+                
+
+                <ul class="nav nav-pills" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-toggle="pill" href="#history">history</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="pill" href="#memory">memory</a>
+                    </li>
+                </ul>
+
+            
+                <div class="tab-content">
+                    <div id="history" class="container tab-pane active">hello</div>
+                    <div id="memory" class="container tab-pane fade">Hello</div>
+                </div>
+            </div>
+            <!-- need to limit convertions for hexa numbers. maybe use regex -->
         </div>
 
     </div>
