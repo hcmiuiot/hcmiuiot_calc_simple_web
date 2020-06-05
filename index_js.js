@@ -43,6 +43,7 @@ function loginCheck() {
         showErrorMsg();
     }
     else {
+        hideErrorMsg();
         request2Sver();
     }
 }
@@ -52,6 +53,12 @@ function showErrorMsg() {
     if (x.style.display === "none") {
         x.style.display = "block";
     }
+}
+// Hide Error Msg
+function hideErrorMsg() {
+    var x = document.getElementById("h6"); // h6 is
+    if (x.style.display === "block") {
+        x.style.display = "none";
 }
 // Request to Server
 function request2Sver() {
