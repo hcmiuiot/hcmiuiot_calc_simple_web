@@ -14,6 +14,8 @@ mongoose
 
 // BodyParser
 app.use(express.urlencoded({ extended: false }));
+app.use(express.static('public'));
+
 
 //ROUTES
 

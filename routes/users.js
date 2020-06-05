@@ -1,6 +1,8 @@
 const express = require('express');
 const router = express.Router();
 const bcrypt = require('bcryptjs');
+var path = require('path');
+const app = express();
 
 // User model
 const User = require('../models/User');
@@ -37,6 +39,11 @@ router.post('/register', (req, res) => {
       );
     }
   });
+});
+
+
+router.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, '..', 'public/webcalc.html'));
 });
 
 // Handle Login
