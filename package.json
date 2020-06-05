@@ -17,5 +17,12 @@
   "bugs": {
     "url": "https://github.com/hcmiuiot/hcmiuiot_calc_simple_web/issues"
   },
-  "homepage": "https://github.com/hcmiuiot/hcmiuiot_calc_simple_web#readme"
+  "homepage": "https://github.com/hcmiuiot/hcmiuiot_calc_simple_web#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "express": "^4.17.1",
+    "html": "^1.0.0",
+    "mongoose": "^5.9.17",
+    "nodemon": "^2.0.4"
+  }
 }
