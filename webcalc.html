@@ -45,28 +45,28 @@
                         </div>
                         <div class="login-input">
                             <div class="icon">
-                                <i class="fas fa-key"></i>
+                                <i id="" class="fas fa-key"></i>
                             </div>
                             <div>
                                 <h5>Password</h5>
                                 <div>
                                     <input id="Password" type="password" style="width: 80%;">
                                     <div>
-                                        <button
-                                            style="margin-left: 90%; margin-top: 3%; width: 15%; border: none; background-color: unset;"
-                                            type="
-                                        " onclick="eyec()"><i class="fa fa-eye" aria-hidden="true"></i></button>
+                                        <button style="margin-left: 90%; margin-top: 3%; width: 15%; border: none; background-color: unset;"
+                                                type="button" onclick="showPwd()">
+                                                <img id="eyeIcon" src="eye-slash.webp" style="width: 20px;">
+                                        </button>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="custom-control custom-checkbox">
                             <input type="checkbox" class="custom-control-input" id="customCheck1">
-                            <label class="custom-control-label" for="customCheck1" onclick="rmbpwd()">Remember
+                            <label class="custom-control-label" for="customCheck1" onclick="savePwd2Cookie()">Remember
                                 Password</label>
                         </div>
                         <a href="#" onclick="errorfunction()">Forgot Password?</a>
-                        <input id="login" onclick="check()" type="button" class="btn btn-primary btn-lg" value="Login" />
+                        <input id="login" onclick="loginCheck()" type="button" class="btn btn-primary btn-lg" value="Login" />
                         <div>
                             <h6 class="pt-2">Not registed? <span class="sign-up text">Create an account</span> </h6>
                         </div>
