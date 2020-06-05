@@ -8,12 +8,78 @@
     </title>
     <!-- put your css in file styles.css -->
     <link rel="stylesheet" type="text/css" href="styles.css" />
+    <!--  Kuerl  -->
+    <link rel="icon" href="icon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="stylelogin.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@600&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/213fbc8967.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="index_js.js"></script>
     
 </head>
 
 <body>
 
-    <div id="login"></div>
+    <div id="login">
+    <!--  Kuerl from here!  -->
+        <img class="bg-image" src="bg.jpg"></img>
+        <div class="container">
+            <div class="img">
+                <img src="myapp.svg">
+            </div>
+            <div id="login" style="display: block; margin: auto;">
+                <div class="login-container">
+                    <form>
+                        <img class="avatar" src="avatar.svg">
+                        <h2>Welcome</h2>
+                        <h6 id="h6" style="color: red; display: none;">Filling your Username and Password both!</h6>
+                        <div class="login-input">
+                            <div class="icon">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div>
+                                <h5>Username</h5>
+                                <input id="Username" type="text">
+                            </div>
+                        </div>
+                        <div class="login-input">
+                            <div class="icon">
+                                <i id="" class="fas fa-key"></i>
+                            </div>
+                            <div>
+                                <h5>Password</h5>
+                                <div>
+                                    <input id="Password" type="password" style="width: 80%;">
+                                    <div>
+                                        <button style="margin-left: 90%; margin-top: 3%; width: 15%; border: none; background-color: unset;"
+                                                type="button" onclick="showPwd()">
+                                                <img id="eyeIcon" src="eye-slash.webp" style="width: 20px;">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck1">
+                            <label class="custom-control-label" for="customCheck1" onclick="savePwd2Cookie()">Remember
+                                Password</label>
+                        </div>
+                        <a href="#" onclick="errorfunction()">Forgot Password?</a>
+                        <input id="login" onclick="loginCheck()" type="button" class="btn btn-primary btn-lg" value="Login" />
+                        <div>
+                            <h6 class="pt-2">Not registed? <span class="sign-up text">Create an account</span> </h6>
+                        </div>
+                    </form>
+                    <div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!--  Kuerl - End!  -->
+    </div>
 
     <div id="register"></div>
 
