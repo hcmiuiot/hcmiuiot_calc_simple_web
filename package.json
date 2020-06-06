@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "a calculator on web with login and register functions",
   "scripts": {
-    "test": "none"
+    "test": "node app.js"
   },
   "repository": {
     "type": "git",
