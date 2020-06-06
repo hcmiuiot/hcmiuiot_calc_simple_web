@@ -1,9 +1,9 @@
+install: 
+  - "npm install"
 language: node_js
-node_js:
+node_js: 
   - "7"
-  services:
+script: 
+  - "node app.js"
+services: 
   - mongodb
- install:
- - npm install
- script:
- - node app.js
