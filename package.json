@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "a calculator on web with login and register functions",
   "scripts": {
-    "test": "node app.js"
+    "test": "node app.js",
+    "dev": "nodemon app.js"
   },
   "repository": {
     "type": "git",
