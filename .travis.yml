@@ -1,1 +1,7 @@
-language: generic
+language: node_js
+node_js:
+  - "7"
+ install:
+ - npm install
+ script:
+ - node app.js
