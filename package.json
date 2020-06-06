@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "a calculator on web with login and register functions",
   "scripts": {
-    "test": "none"
+    "test": "exit 0"
   },
   "repository": {
     "type": "git",
