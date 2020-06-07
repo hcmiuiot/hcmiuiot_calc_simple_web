@@ -1,4 +1,5 @@
-﻿<!doctype html>
+﻿
+<!doctype html>
 
 <html lang="en">
 <head>
@@ -9,6 +10,7 @@
     <!-- put your css in file styles.css -->
 <<<<<<< HEAD
     <link rel="stylesheet" type="text/css" href="styles.css" />
+<<<<<<< HEAD:webcalc.html
     
 =======
     <link rel="stylesheet" type="css" href="styles.css" />
@@ -37,48 +39,145 @@
                         <div>
                             <h5>Fullname</h5>
                             <input id="full-name" class="text-box " type="text" required>
-                        </div>
-                    </div>
+=======
+<<<<<<< HEAD:public/webcalc.html
+=======
+    <link rel="stylesheet" type="text/css" href="login/stylelogin.css" />
+>>>>>>> login:webcalc.html
+    <link rel="stylesheet" type="text/css" href="stylelogin.css" />
+    <link rel="stylesheet" type="text/css" href="styleRegister.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
 
-                    <div class="login-input ">
-                        <div class="icon">
-                            <em class="fas fa-user"></em>
-                        </div>
-                        <div>
-                            <h5>Username</h5>
-                            <input id="user-name" class="text-box" type="text" required>
-                        </div>
-                    </div>
-                    <div class="login-input ">
-                        <div class="icon">
-                            <em class="fas fa-user"></em>
-                        </div>
-                        <div>
-                            <h5>Password</h5>
-                            <input id="password" class="text-box" type="password" required>
-                        </div>
-                    </div>
-                    <div class="login-input">
-                        <div class="icon">
-                            <em class="fas fa-user"></em>
-                        </div>
-                        <div>
-                            <h5>Repeat Password</h5>
-                            <input id="re-password" class="text-box " type="password" required>
-                        </div>
-                    </div>
-                    <div class="form-group form-check">
-                        <label class="form-check-label">
-                            <input id="checked" class="form-check-input left" type="checkbox"> I agree to the <strong> terms of User </strong>
-                        </label>
-                    </div>
-                    <input type="submit" class="sign-up btn btn-primary btn-lg" value="Sign Up" />
+</head>
 
-                </form>
-            </div>
+<body>
+
+    <img class="bg-image" alt="background image" src="img/bg.jpg">
+
+    <div class="container" id="ctn">
+
+        <div class="img">
+            <img alt="decorate image" src="img/myapp.svg">
         </div>
 
-    <div class="grid-container" id="calculator">
+        <!--<div id="login" class="login-container"></div>-->
+        <div id="login" style="display: block; margin: auto;">
+            <!--  Kuerl from here!  -->
+<<<<<<< HEAD:public/webcalc.html
+                   
+                    <div id="login" style="display: block; margin: auto;">
+=======
+>>>>>>> login:webcalc.html
+                        <div class="login-container">
+                            <form>
+                                <img class="avatar" src="login/avatar.svg" alt="avt">
+                                <h2>Welcome</h2>
+                                <h6 id="h6" style="color: red; display: none;">Filling your Username and Password both!</h6>
+                                <div class="login-input">
+                                    <div class="icon">
+                                        <em class="fas fa-user"></em>
+                                    </div>
+                                    <div>
+                                        <h5>Username</h5>
+                                        <input id="Username" type="text">
+                                    </div>
+                                </div>
+                                <div class="login-input">
+                                    <div class="icon">
+                                        <div id="" class="fas fa-key"></div>
+                                    </div>
+                                    <div>
+                                        <h5>Password</h5>
+                                        <div>
+                                            <input id="Password" type="password" style="width: 80%;">
+                                            <div>
+                                                <button style="margin-left: 90%; margin-top: 3%; width: 15%; border: none; background-color: unset;"
+                                                        type="button" onclick="showPwd()">
+                                                        <img id="eyeIcon" alt="eyeIcon" src="login/eye-slash.webp" style="width: 20px;">
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                    <label class="custom-control-label" for="customCheck1" onclick="savePwd2Cookie()">Remember
+                                        Password</label>
+                                </div>
+                                <a href="#" onclick="errorfunction()">Forgot Password?</a>
+                                <input id="login" onclick="loginCheck()" type="button" class="btn btn-primary btn-lg" value="Login" />
+                                <div>
+                                    <h6 class="pt-2">Not registed? <span class="sign-up text">Create an account</span> </h6>
+                                </div>
+                            </form>
+                            <div>
+                            </div>
+>>>>>>> 20e618c144bb2efe5e3295b71e536ff9316d33f4:public/webcalc.html
+                        </div>
+                    </div>
+            <!--  Kuerl - End!  -->
+            </div>
+
+
+        <div id="register" class="login-container hidden">
+            <form action="#" onsubmit="return false;">
+                <h2 class="text-left">Sign Up</h2>
+                <em><div class="inner-text"></div></em>
+                <div class="login-input">
+                    <div class="icon">
+                        <em class="fas fa-user"></em>
+                    </div>
+                    <div>
+                        <h5>Fullname</h5>
+                        <input id="full-name" class="text-box " type="text" required>
+                    </div>
+                </div>
+
+                <div class="login-input ">
+                    <div class="icon">
+                        <em class="fas fa-user"></em>
+                    </div>
+                    <div>
+                        <h5>Username</h5>
+                        <input id="user-name" class="text-box" type="text" required>
+                    </div>
+                </div>
+                <div class="login-input ">
+                    <div class="icon">
+                        <em class="fas fa-user"></em>
+                    </div>
+                    <div>
+                        <h5>Password</h5>
+                        <input id="password" class="text-box" type="password" required>
+                    </div>
+                </div>
+                <div class="login-input">
+                    <div class="icon">
+                        <em class="fas fa-user"></em>
+                    </div>
+                    <div>
+                        <h5>Repeat Password</h5>
+                        <input id="re-password" class="text-box " type="password" required>
+                    </div>
+                </div>
+                <div class="form-group form-check">
+                    <label class="form-check-label">
+                        <input id="checked" class="form-check-input left" type="checkbox"> I agree to the <strong> terms of User </strong>
+                    </label>
+                </div>
+                <input type="submit" class="sign-up btn btn-primary btn-lg" value="Sign Up" />
+
+            </form>
+        </div>
+    </div>
+
+    <div class="grid-container hidden" id="calculator">
 
         <!-- need to add some bootstrap beauty -->
         <div class="majorRow">
@@ -125,7 +224,7 @@
                     <div class="column">
                         <div class="operatorcard" onclick="octToDec()">fr8</div>
                     </div>
-                    
+
                 </div>
 
                 <div class="row">
@@ -243,7 +342,7 @@
 
             <div class="majorColumn" id="history-side">
                 <!-- need to add memory tab functions -->
-                
+
 
                 <ul class="nav nav-pills" role="tablist">
                     <li class="nav-item">
@@ -254,7 +353,7 @@
                     </li>
                 </ul>
 
-            
+
                 <div class="tab-content">
                     <div id="history" class="container tab-pane active">hello</div>
                     <div id="memory" class="container tab-pane fade">Hello</div>
@@ -265,26 +364,17 @@
 
     </div>
 
-
-
     <!-- put your javascript in a seperate file in folder javascript -->
     <!-- and call them at the end of body -->
     <!-- js -->
     <script src="javascripts/numb.js"></script>
     <script src="javascripts/empty.js"></script>
-
+    <script src="javascripts/signUp.js"></script>
+   
     <!-- CDN -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="javascripts/index_js.js"></script>
+    <script src="javascripts/signUp.js"></script>
 
-=======
-
-   <!-- put your javascript in a seperate files in folder javascript -->
-   <!-- and call them at the end of body -->
-   <script src="javascripts/signUp.js"></script>
-  <script></script>
->>>>>>> fe4ce776bc409da4a9fa47f829b3caa019ac6fdd
 </body>
 </html>
+
