@@ -1,4 +1,3 @@
-
 const url = 'http://localhost5000/register';
 let header = document.getElementById("ctn");
 let btns = header.getElementsByClassName("sign-up");
@@ -22,9 +21,10 @@ const sendHttpRequest = (method, url, data) => {
     xhr.onload = () => {
       console.log(xhr.response);
       resolve(xhr.response);
+      hidden(1);
     };
 
-    xhr.send(JSON.stringify(data));
+    xhr.send(data);
   });
   return promise;
 };
