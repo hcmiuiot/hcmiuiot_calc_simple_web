@@ -28,12 +28,6 @@ body {
 
 }
 
-.img {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-
 .img img {
     width: 500px;
 }

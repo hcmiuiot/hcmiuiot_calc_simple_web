@@ -91,4 +91,5 @@ function calcDiv() {
     div1.style.display = "none";
     calcDiv = document.getElementById("calculator");
     calcDiv.style.display = "block";
+    document.getElementById("ctn").style.display = "none";
 }

@@ -28,63 +28,65 @@
 
     <div class="container" id="ctn">
 
-        <div class="img">
+        <div class="img" id="img">
             <img alt="decorate image" src="img/myapp.svg">
         </div>
 
         <!--<div id="login" class="login-container"></div>-->
         <div id="login" style="display: block; margin: auto;">
             <!--  Kuerl from here!  -->
-                   
-                    <div id="login" style="display: block; margin: auto;">
-                        <div class="login-container">
-                            <form>
-                                <img class="avatar" src="login/avatar.svg" alt="avt">
-                                <h2>Welcome</h2>
-                                <h6 id="h6" style="color: red; display: none;">Filling your Username and Password both!</h6>
-                                <div class="login-input">
-                                    <div class="icon">
-                                        <em class="fas fa-user"></em>
-                                    </div>
-                                    <div>
-                                        <h5>Username</h5>
-                                        <input id="Username" type="text">
-                                    </div>
-                                </div>
-                                <div class="login-input">
-                                    <div class="icon">
-                                        <div id="" class="fas fa-key"></div>
-                                    </div>
-                                    <div>
-                                        <h5>Password</h5>
-                                        <div>
-                                            <input id="Password" type="password" style="width: 80%;">
-                                            <div>
-                                                <button style="margin-left: 90%; margin-top: 3%; width: 15%; border: none; background-color: unset;"
-                                                        type="button" onclick="showPwd()">
-                                                        <img id="eyeIcon" alt="eyeIcon" src="login/eye-slash.webp" style="width: 20px;">
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="custom-control custom-checkbox">
-                                    <input type="checkbox" class="custom-control-input" id="customCheck1">
-                                    <label class="custom-control-label" for="customCheck1" onclick="savePwd2Cookie()">Remember
-                                        Password</label>
-                                </div>
-                                <a href="#" onclick="errorfunction()">Forgot Password?</a>
-                                <input id="login" onclick="loginCheck()" type="button" class="btn btn-primary btn-lg" value="Login" />
-                                <div>
-                                    <h6 class="pt-2">Not registed? <span class="sign-up text">Create an account</span> </h6>
-                                </div>
-                            </form>
+
+            <div id="login" style="display: block; margin: auto;">
+                <div class="login-container">
+                    <form>
+                        <img class="avatar" src="login/avatar.svg" alt="avt">
+                        <h2>Welcome</h2>
+                        <h6 id="h6" style="color: red; display: none;">Filling your Username and Password both!</h6>
+                        <div class="login-input">
+                            <div class="icon">
+                                <em class="fas fa-user"></em>
+                            </div>
                             <div>
+                                <h5>Username</h5>
+                                <input id="Username" type="text">
                             </div>
                         </div>
+                        <div class="login-input">
+                            <div class="icon">
+                                <div id="" class="fas fa-key"></div>
+                            </div>
+                            <div>
+                                <h5>Password</h5>
+                                <div>
+                                    <input id="Password" type="password" style="width: 80%;">
+                                    <div>
+                                        <button style="margin-left: 90%; margin-top: 3%; width: 15%; border: none; background-color: unset;"
+                                                type="button" onclick="showPwd()">
+                                            <img id="eyeIcon" alt="eyeIcon" src="login/eye-slash.webp" style="width: 20px;">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck1">
+                            <label class="custom-control-label" for="customCheck1" onclick="savePwd2Cookie()">
+                                Remember
+                                Password
+                            </label>
+                        </div>
+                        <a href="#" onclick="errorfunction()">Forgot Password?</a>
+                        <input id="login" onclick="loginCheck()" type="button" class="btn btn-primary btn-lg" value="Login" />
+                        <div>
+                            <h6 class="pt-2">Not registed? <span class="sign-up text">Create an account</span> </h6>
+                        </div>
+                    </form>
+                    <div>
                     </div>
-            <!--  Kuerl - End!  -->
+                </div>
             </div>
+            <!--  Kuerl - End!  -->
+        </div>
 
 
         <div id="register" class="login-container hidden">
@@ -137,174 +139,150 @@
 
             </form>
         </div>
+
+
     </div>
 
-    <div class="grid-container hidden" id="calculator">
+    <div class="container-fluid p-3 my-3 bg-dark hidden text-white" id="calculator">
 
-        <!-- need to add some bootstrap beauty -->
-        <div class="majorRow">
+        <div class="row">
+            <div class="col" id="calc-side">
+                <div id="minorDisplay"><!-- say hello user here --> </div>
+                <div id="mainDisplay"> </div>
 
-            <div class="majorColumn" id="calc-side">
-
-                <div class="minorRow">
-                    <div id="minorDisplay"><!-- say hello user here --> </div>
-                </div>
-
-                <div class="displayRow">
-                    <div id="mainDisplay"> </div>
-                </div>
-
-                <div class="minorRow">
-                    <div class="minorColumn">
+                <div class="row">
+                    <div class="col">
                         <div class="memorycard" value="MC" onclick="MC()">MC</div>
                     </div>
-                    <div class="minorColumn">
+                    <div class="col">
                         <div class="memorycard" value="MR" onclick="MR()">MR</div>
                     </div>
-                    <div class="minorColumn">
+                    <div class="col">
                         <div class="memorycard" value="M+" onclick="Mpl()">M+</div>
                     </div>
-                    <div class="minorColumn">
+                    <div class="col">
                         <div class="memorycard" value="M-" onclick="Mmn()">M-</div>
                     </div>
-                    <div class="minorColumn">
+                    <div class="col">
                         <div class="memorycard" value="MS" onclick="MS()">MS</div>
                     </div>
                 </div>
 
-                <!-- there's a bug here. FIX -->
                 <div class="row">
-                    <div class="column">
-                        <div class="operatorcard" onclick="decToHexa()">to16</div>
-                    </div>
-                    <div class="column">
-                        <div class="operatorcard" onclick="hexaToDec()">fr16</div>
-                    </div>
-                    <div class="column">
-                        <div class="operatorcard" onclick="decToOct()">to8</div>
-                    </div>
-                    <div class="column">
-                        <div class="operatorcard" onclick="octToDec()">fr8</div>
-                    </div>
-
-                </div>
-
-                <div class="row">
-                    <div class="mminorColumn">
+                    <div class="col">
                         <div class="operatorcard" onclick="decToBi()">to2</div>
                     </div>
-                    <div class="mminorColumn">
+                    <div class="col">
                         <div class="operatorcard" onclick="biToDec()">fr2</div>
                     </div>
-                    <div class="mminorColumn">
+                    <div class="col">
                         <div class="operatorcard" onclick="decToHexa()">to16</div>
                     </div>
-                    <div class="mminorColumn">
+                    <div class="col">
                         <div class="operatorcard" onclick="hexaToDec()">fr16</div>
                     </div>
-                    <div class="mminorColumn">
+                    <div class="col">
                         <div class="operatorcard" onclick="decToOct()">to8</div>
                     </div>
-                    <div class="mminorColumn">
+                    <div class="col">
                         <div class="operatorcard" onclick="octToDec()">fr8</div>
                     </div>
                 </div>
 
                 <div class="row">
-                    <div class="column">
+                    <div class="col">
                         <div class="operatorcard" onclick="funct('%')">%</div>
                     </div>
-                    <div class="column">
+                    <div class="col">
                         <div class="operatorcard" onclick="clearhistory()">CH</div>
                     </div>
-                    <div class="column">
+                    <div class="col">
                         <div class="operatorcard" onclick="$('#mainDisplay').text('')">C</div>
                     </div>
-                    <div class="column">
+                    <div class="col">
                         <div class="operatorcard" onclick="cleartemp()">del</div>
                     </div>
                 </div>
 
                 <div class="row">
-                    <div class="column">
+                    <div class="col">
                         <div class="operatorcard" onclick="funct('inverse')">1/x</div>
                     </div>
-                    <div class="column">
+                    <div class="col">
                         <div class="operatorcard" onclick="funct('sqr')">x^2</div>
                     </div>
-                    <div class="column">
+                    <div class="col">
                         <div class="operatorcard" onclick="funct('sqrt')">sqrt(x)</div>
                     </div>
-                    <div class="column">
+                    <div class="col">
                         <div class="operatorcard" onclick="funct('/')">/</div>
                     </div>
                 </div>
 
                 <div class="row">
-                    <div class="column">
+                    <div class="col">
                         <div class="numbcard" onclick="numb(7)">7</div>
                     </div>
-                    <div class="column">
+                    <div class="col">
                         <div class="numbcard" onclick="numb(8)">8</div>
                     </div>
-                    <div class="column">
+                    <div class="col">
                         <div class="numbcard" onclick="numb(9)">9</div>
                     </div>
-                    <div class="column">
+                    <div class="col">
                         <div class="operatorcard" onclick="funct('mult')">*</div>
                     </div>
                 </div>
 
                 <div class="row">
-                    <div class="column">
+                    <div class="col">
                         <div class="numbcard" onclick="numb(4)">4</div>
                     </div>
-                    <div class="column">
+                    <div class="col">
                         <div class="numbcard" onclick="numb(5)">5</div>
                     </div>
-                    <div class="column">
+                    <div class="col">
                         <div class="numbcard" onclick="numb(6)">6</div>
                     </div>
-                    <div class="column">
+                    <div class="col">
                         <div class="operatorcard" onclick="funct('minus')">-</div>
                     </div>
                 </div>
 
                 <div class="row">
-                    <div class="column">
+                    <div class="col">
                         <div class="numbcard" onclick="numb(1)">1</div>
                     </div>
-                    <div class="column">
+                    <div class="col">
                         <div class="numbcard" onclick="numb(2)">2</div>
                     </div>
-                    <div class="column">
+                    <div class="col">
                         <div class="numbcard" onclick="numb(3)">3</div>
                     </div>
-                    <div class="column">
+                    <div class="col">
                         <div class="operatorcard" onclick="funct('plus')">+</div>
                     </div>
                 </div>
 
                 <div class="row">
-                    <div class="column">
+                    <div class="col">
                         <div class="operatorcard" onclick="negate()">+/-</div>
                     </div>
-                    <div class="column">
+                    <div class="col">
                         <div class="numbcard" onclick="numb(0)">0</div>
                     </div>
-                    <div class="column">
+                    <div class="col">
                         <div class="operatorcard" onclick="numb('.')">.</div>
                     </div>
-                    <div class="column">
+                    <div class="col">
                         <div class="operatorcard" onclick="equal()">=</div>
                     </div>
                 </div>
 
             </div>
 
-            <div class="majorColumn" id="history-side">
+            <div class="col" id="history-side">
                 <!-- need to add memory tab functions -->
-
 
                 <ul class="nav nav-pills" role="tablist">
                     <li class="nav-item">
@@ -321,8 +299,9 @@
                     <div id="memory" class="container tab-pane fade">Hello</div>
                 </div>
             </div>
-            <!-- need to limit convertions for hexa numbers. maybe use regex -->
         </div>
+        <!-- need to limit convertions for hexa numbers. maybe use regex -->
+
 
     </div>
 
@@ -332,7 +311,7 @@
     <script src="javascripts/numb.js"></script>
     <script src="javascripts/empty.js"></script>
     <script src="javascripts/signUp.js"></script>
-   
+
     <!-- CDN -->
     <script src="javascripts/index_js.js"></script>
     <script src="javascripts/signUp.js"></script>
