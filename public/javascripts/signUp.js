@@ -1,5 +1,5 @@
 
-const url = 'http://localhost5000/register';
+const url = 'http://localhost:5000/register';
 let header = document.getElementById("ctn");
 let btns = header.getElementsByClassName("sign-up");
 let display = header.getElementsByClassName("login-container");
